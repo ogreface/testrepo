@@ -1,0 +1,15 @@
+name: PR Validation
+
+on:
+  pull_request:
+
+jobs:
+  check-dist:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check PR text
+        uses: ogreface/block-if-bad-asana-link@latest
+        with:
+          sentinel: "fixme.fake.com"
+          regex: 'fake.com/\d'
