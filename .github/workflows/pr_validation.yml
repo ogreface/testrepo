@@ -12,4 +12,4 @@ jobs:
         uses: ogreface/block-if-bad-asana-link@v001
         with:
           sentinel: "fixme.addi.com"
-          regex: 'https://fake.com/\d'
+          regex: 'https://app.asana.com/\d/\d+/\d+/f'
