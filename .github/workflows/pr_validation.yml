@@ -11,5 +11,5 @@ jobs:
       - name: Check PR text
         uses: ogreface/block-if-bad-asana-link@v001
         with:
-          sentinel: "fixme.fake.com"
+          sentinel: "fixme.addi.com"
           regex: 'https://fake.com/\d'
