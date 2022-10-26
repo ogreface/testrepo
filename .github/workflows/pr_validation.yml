@@ -4,12 +4,12 @@ on:
   pull_request:
 
 jobs:
-  check-dist:
+  fake-link:
     runs-on: ubuntu-latest
 
     steps:
       - name: Check PR text
-        uses: ogreface/block-if-bad-asana-link@latest
+        uses: ogreface/block-if-bad-asana-link@v001
         with:
           sentinel: "fixme.fake.com"
           regex: 'fake.com/\d'
